@@ -31,7 +31,8 @@ AddEncoding gzip svgz
   ReadmeName /fancy-index/footer.html
 
   # IGNORE THESE FILES
-  IndexIgnoreReset ON
+  # IndexIgnoreReset ON
+  # disabled as option is not supported by Uberspace 6
   IndexIgnore .ftpquota .DS_Store .git
 
   # DEFAULT ICON
@@ -41,6 +42,7 @@ AddEncoding gzip svgz
   AddIcon /fancy-index/icons/github.svg .github
   AddIcon /fancy-index/icons/nodejs.svg node_modules
   AddIcon /fancy-index/icons/file-directory.svg ^^DIRECTORY^^
+  AddIcon /fancy-index/icons/empty.svg ^^BLANKICON^^
 
   # SPECIFIC FILE ICONS
   # https://github.com/file-icons/source
